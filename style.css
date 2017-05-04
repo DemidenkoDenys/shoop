@@ -1,0 +1,451 @@
+@-webkit-keyframes blink {
+	from { background: white; }
+	50% { background: lightgrey; }
+	to { background: white; }
+}
+
+.blink{
+	-webkit-animation: blink 2s ease-in-out;
+			animation: blink 2s ease-in-out;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	max-width: 1200px;
+	min-width: 470px;
+	margin: 0 auto;
+}
+
+a{
+	outline: none;
+}
+
+.green{
+	color: #63a71c;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.container{
+	margin-top: 10px;
+}
+
+.container>p{
+	font-size: 25px;
+	line-height: 50px;
+	text-indent: 30px;
+}
+
+.container>ul{
+	list-style: none;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.container ul li{
+	width: 150px;
+	height: 180px;
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	vertical-align: top;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.container ul li:hover{
+	-webkit-box-shadow: 3px 3px 3px black;
+	        box-shadow: 3px 3px 3px black;
+}
+
+.container ul li p{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5px;
+}
+
+.container ul li img{
+	width: auto;
+	max-height: 70%;
+}
+
+/* ===================================== */
+/* ============== HEADER =============== */
+/* ===================================== */
+
+.header{
+	height: 100px;
+}
+
+.logo{
+	width: 200px;
+	height: 100%;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+	background: url("img/logo.png") no-repeat;
+	background-size: contain;
+}
+
+.logo img{
+	width: 200px;
+	margin: 10px 0 0 10px;
+}
+
+.cart{
+	width: 370px;
+	height: 100%;
+	float: right;
+	overflow: hidden;
+}
+
+.cart p{
+	width: 95%;
+	margin-top: 7px;
+	font-size: 20px;
+}
+
+.cart p span{
+	color: black;
+}
+
+.cart img{
+	height: 100%;
+	float: right;
+	opacity: .5;
+}
+
+.cart input{
+	margin-top: 10px;
+}
+
+.logout img{
+	margin-right: 5px;
+}
+
+.register{
+	position: relative;
+	top: -62px;
+	left: -170px;
+}
+
+.button{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-box-shadow: 2px 2px 5px black;
+	        box-shadow: 2px 2px 5px black;
+	-webkit-border-radius: 25px;
+	        border-radius: 25px;
+	background: linear-gradient(to top, #c7ef6e, #a0e01c);
+	color: #63a71c;
+	padding: 0 10px;
+	height: 38px;
+	border: 3px solid #9dd919;
+
+	font-size: 20px;
+	line-height: 30px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.button img{
+	height: 100%;
+	float: right;
+	margin-left: 5px;
+}
+
+.disabled{
+	background: white;
+	cursor: default;
+	pointer-events: none;
+}
+
+input[type=submit].disabled{
+	display: none;
+}
+
+.disabled:hover{
+	background: lightgrey !important;
+	cursor: default;
+	pointer-events: none;
+}
+
+input[type=submit]{
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.cart-button{
+	display: inline-block;
+	float: right;
+	clear: both;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+.button:hover{
+	background: linear-gradient(to top, #a0e01c, #c7ef6e);
+	color: #4c8015;
+}
+
+.cart-button:hover img,
+.logout:hover img{
+	opacity: 1;
+}
+
+.total{
+	padding-top: 15px;
+}
+
+.name{
+	font-size: 14px !important;
+	text-align: right;
+}
+
+.logout{
+	float: right;
+	height: 20px;
+	width: 20px;
+	margin-top: -2px;
+	margin-left: 10px;
+}
+
+@media only screen and (max-width : 620px){
+	.logo{
+		width: 64px;
+		height: 100%;
+		margin-top: 10px;
+		display: inline-block;
+		float: left;
+		background: url("img/logo2.png") no-repeat;
+		background-size: contain;
+	}
+
+	.equipment img{
+		width: 100% !important;
+		max-width: 90% !important;
+	}
+}
+
+.back{
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+	width: 50px;
+	cursor: pointer;
+}
+
+.back img{
+	width: 100%;
+	height: 100%;
+	opacity: .5;
+}
+
+.back p{
+	display: none;
+	position: absolute;
+	width: 170px;
+	top: -20px;
+	left: 20px;
+	background: white;
+	-webkit-box-shadow: 0px 0px 15px 10px white;
+	        box-shadow: 0px 0px 15px 10px white;
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+}
+
+.back:hover img{
+	opacity: 1;
+}
+
+.back:hover>p{
+	display: inline-block;
+}
+
+.equipment{
+	margin-top: 30px;
+	padding: 20px;
+}
+
+h1{
+	color: #63a71c;
+}
+
+.equipment a{
+	padding: 0 15px;
+	float: right;
+}
+
+.equipment p{
+	padding-top: 40px;
+}
+
+.equipment h2{
+	margin-top: 40px;
+}
+
+.equipment img{
+	width: 40%;
+	max-width: 300px;
+	float: left;
+	margin: 30px;
+}
+
+.carts{
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+.carts table{
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+}
+
+.carts td input{
+	width: 50px;
+}
+
+.carts td img{
+	width: 100%;
+}
+
+.carts td:nth-child(2) a{
+	margin-left: 20px;
+}
+
+.carts>p:first-child{
+	font-size: 20px;
+	float: right;
+}
+
+.table-equip{
+	height: 100px;
+}
+
+.table-header{
+	background: pink;
+	font-weight: bold;
+	height: 35px;
+}
+
+.table-footer{
+	background: lightblue;
+	font-weight: bold;
+	height: 35px;
+}
+
+.table-footer-total{
+	background: lightgrey;
+	height: 35px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.delivery{
+	height: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#save-change,
+.checkout-button{
+	margin-top: 15px;
+	margin-right: 115px;
+	float: right;
+}
+
+.register-button{
+	position: relative;
+	left: 180px;
+	margin-top: 10px;
+}
+
+.minimal{
+	height: 30px;
+}
+
+.info-user{
+	position: relative;
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.info-user p{
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 120px;
+}
+
+.info-user form{
+	margin-top: 10px;
+}
+
+.info-user label{
+	display: block;
+	margin-bottom: 5px;
+	width: 145px;
+	text-align: right;
+}
+
+.info-user label input,
+.info-user label select{
+	position: absolute;
+	left: 155px;
+	width: 257px;
+}
+
+.info-user label select{
+	width: 261px;
+}
+
+.purchase-button{
+	float: right;
+	margin-top: 10px;
+}
+
+.specs{
+	margin-right: 150px;
+	text-align: right;
+}
+
+.cart a h1{
+	width: 215px;
+	float: right;
+	margin-top: 10px;
+	margin-right: -10px;
+}
+
+.little{
+	width: 100px !important;
+}
+
+#year{
+	left: 312px;
+}
+
+.thanks-button{
+	float: right;
+	margin-top: -10px;
+	margin-left: 10px;
+}
+
+.thanks{
+	width: 100%;
+	font-size: 24px;
+	margin-top: 50px;
+	text-align: center;
+}

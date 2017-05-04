@@ -1,0 +1,314 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.green{
+	color: #63a71c;
+}
+
+.auth{
+	width: 400px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 200px;
+	border: 1px solid grey;
+	background: lightgrey;
+}
+
+.auth h1{
+	text-align: center;
+	margin: 20px 0;
+}
+
+.auth label{
+	display: block;
+	position: relative;
+	margin-bottom: 10px;
+	width:250px;
+	margin: 0 auto 10px auto;
+}
+
+.auth label input{
+	position: absolute;
+	left: 60px;
+}
+
+.enter,
+.enter input{
+	width: 100px;
+	height: 25px;
+	margin: 10px auto 0 auto;
+}
+
+/* ===================================== */
+/* ============== HEADER =============== */
+/* ===================================== */
+
+.header{
+	height: 100px;
+}
+
+.logo{
+	width: 200px;
+	height: 100%;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 50px;
+	float: left;
+	background: url("../img/logo.png") no-repeat;
+	background-size: contain;
+}
+
+.logo img{
+	width: 200px;
+	margin: 10px 0 0 10px;
+}
+
+.cart{
+	width: 320px;
+	height: 100%;
+	float: right;
+	overflow: hidden;
+	margin-right: 30px;
+}
+
+.cart p{
+	width: 95%;
+	margin-top: 7px;
+	font-size: 20px;
+}
+
+.cart p span{
+	color: black;
+}
+
+.cart img{
+	height: 100%;
+	float: right;
+	opacity: .5;
+}
+
+.logout img{
+	margin-right: 5px;
+}
+
+.button{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-box-shadow: 2px 2px 5px black;
+	        box-shadow: 2px 2px 5px black;
+	-webkit-border-radius: 25px;
+	        border-radius: 25px;
+	background: linear-gradient(to top, #c7ef6e, #a0e01c);
+	color: #63a71c;
+	padding: 0 10px;
+	height: 38px;
+	border: 3px solid #9dd919;
+
+	font-size: 20px;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+.button img{
+	height: 100%;
+	float: right;
+	margin-left: 5px;
+}
+
+.cart-button{
+	display: inline-block;
+	float: right;
+	clear: both;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+.button:hover{
+	background: linear-gradient(to top, #a0e01c, #c7ef6e);
+	color: #4c8015;
+}
+
+.cart-button:hover img,
+.logout:hover img{
+	opacity: 1;
+}
+
+.total{
+	padding-top: 15px;
+}
+
+.name{
+	font-size: 14px !important;
+	text-align: right;
+}
+
+.logout{
+	float: right;
+	height: 20px;
+	width: 20px;
+	margin-top: -2px;
+	margin-left: 10px;
+}
+
+@media only screen and (max-width : 620px){
+	.logo{
+		width: 64px;
+		height: 100%;
+		margin-top: 10px;
+		display: inline-block;
+		float: left;
+		background: url("../img/logo2.png") no-repeat;
+		background-size: contain;
+	}
+
+}
+
+.logout img{
+	margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+	padding: 50px;
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+td{
+	border: 1px solid black;
+	padding-left: 5px;
+	height: 20px;
+}
+
+.hid{
+	display: none;
+}
+
+.head{
+	font-size: 20px;
+	height: 30px;
+	background: #b0e04f;
+	border: none;
+}
+
+.menu td{
+	border: none;
+	text-align: center;
+}
+
+.closed{
+	background: rgba(0, 0, 0, .05);
+	color: rgba(0, 0, 0, .1);
+}
+
+.menu td a{
+	text-decoration: none;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	line-height: 28px;
+}
+
+.menu td{
+	cursor: pointer;
+}
+
+.menu td:hover{
+	color: #63a71c;
+	background: #88c017;
+}
+
+.goods td{
+	overflow: hidden;
+}
+
+.goods td p{
+	max-height: 100px;
+}
+
+td input,
+td select{
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	padding-left: 5px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+td img{
+	width: 70%;
+}
+
+input[type=file]{
+	display: none;
+}
+
+#load,
+#load-cat{
+	cursor: pointer;
+}
+
+textarea{
+	width: 100%;
+	height: 150px;
+}
+
+.textarea-field,
+.input{
+	padding: 0 !important;
+}
+
+.input{
+	height: 100%;
+}
+
+.reset-password{
+	width: 70%;
+	display: inline-block;
+}
+
+.reset-submit{
+	display: inline-block;
+	float: right;
+	margin-right: 10px;
+	margin-top: 3px;
+	width: auto;
+	height: auto;
+	background: transparent;
+	cursor: pointer;
+	text-decoration: underline;
+	color: blue;
+}
+
+.reset-id{
+	display: none;
+}
